@@ -28,6 +28,9 @@ export default function App() {
         style={styles.logo}>
       </Image>
 
+      <Text style={{ margin: 10, width: "80%", textAlign: "center", fontSize: 20 }}>
+        Selecione a quantidade de caracteres da sua senha
+      </Text>
       <Text style={styles.title}>
         {size} caracteres
       </Text>
@@ -37,7 +40,6 @@ export default function App() {
           style={{ width: '100%', height: 50 }}
           minimumValue={6}
           maximumValue={20}
-          maximumTrackTintColor='#FF0000'
           minimumTrackTintColor='#000'
           thumbTintColor='#392de9'
           value={size}
